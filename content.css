@@ -1,0 +1,47 @@
+#my-extension-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  z-index: 10000;
+  box-sizing: border-box;
+}
+
+#overlay-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+#inputText {
+  width: 100%;
+  font-size: 20px;
+  margin-top: 10px;
+  min-height: 34px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+#button-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  width: 100%; /* Full width for buttons */
+}
+
+button {
+  font-size: 16px;
+  padding: 8px 12px;
+}
+
+#result {
+  margin-top: 10px;
+  font-weight: bold; 
+  max-height: 200px; 
+  overflow-y: auto;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XPath Text Retriever</title>
+</head>
+<body>
+  <div id="overlay-content">
+    <!-- Textarea for JSON with XPaths -->
+    <textarea id="inputText" rows="1" placeholder="Enter JSON with XPaths"></textarea>
+    <!-- Buttons aligned in a row directly below the textarea -->
+    <div id="button-container">
+      <button id="injectButton">XPath</button>
+      <br>
+      <button id="exportButton">Excel</button>
+      <br>
+      <button id="toggleButton">Show Result</button>
+      <br>
+      <button id="positionButton">Move Overlay</button>
+    </div>
+
+    <!-- Result display area -->
+    
+    <pre id="result" style="margin-top: 10px; font-weight: bold; max-height: 200px; overflow-y: auto;">
+      
+    </pre>
+    
+    
+    <!-- Include xlsx library for Excel export -->
+    <script src="xlsx.full.min.js"></script>
+  </div>
+</body>
+</html>
